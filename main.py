@@ -32,8 +32,8 @@ async def upload_image(file: UploadFile):
     
     possible_texts = extract_texts_from_directory(directory)    
     
-    os.remove(file_path)
-    os.remove(directory)
+    # os.remove(file_path)
+    # os.remove(directory)
         
     return {'result': possible_texts}
 
@@ -57,9 +57,9 @@ async def upload_video(file: UploadFile):
     
     possible_texts = extract_texts_from_directory(output_path_directory)    
     
-    os.remove(file_path)
-    os.remove(output_path_directory)
-    os.remove(directory)
+    # os.remove(file_path)
+    # os.remove(output_path_directory)
+    # os.remove(directory)
         
     return {'result': possible_texts}
     
